@@ -42,23 +42,21 @@ img {
 }
 
 .nav-nav {
-    background-color: rgb(0, 0, 59);
-    display: flex;
-    flex-wrap: wrap;
-    padding: 3px;
-    align-items: center;
+    background-color: rgb(0, 0, 80);
+    padding: 15px;
 }
-.nav-nav > div > a {
-    padding: 10px;
+.container-nevegacao {
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.container-nevegacao a {
+    padding: 9px;
     font-size: 19px;
 }
-.nav-nav > div {
- margin: auto;
- display: flex;
-}
-.nav-nav > div > a:hover {
-    background-color: rgb(0, 0, 136);
-    scroll-behavior: smooth;
+.container-nevegacao a:hover {
+    background-color: blue;
+    font-weight: bold;
 }
 
 /* CSS GRID 2 */
@@ -77,7 +75,7 @@ img {
     margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .grid2 {
         grid-template-columns: 1fr;
     }
@@ -107,3 +105,18 @@ img {
 p {
     color: white;
 }
+
+.video {
+    height: 0;
+    padding-top: 25px;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+.video iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
